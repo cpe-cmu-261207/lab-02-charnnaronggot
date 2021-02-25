@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate GPA</title>
+    <style>
+        body{
+            background-color:papayawhip;
+            align-content: center;
+        }
+        #menu,#submit-GPA,h2,#semAll,h1{
+            text-align: center;
+            color: rgb(47, 79, 255);
+            margin: auto;
+        
+        }
+        #menu td,#menu th{
+            text-align: center;
+            padding: 8px;
+        }
+        #table2{
+            border: rgb(135, 197, 255) solid;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #ttable {
+            border: rgb(3, 0, 175) solid;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #h1{
+            background-color: #fe938c;
+            text-align: center;
+            color: black;
+            margin: auto;
+        }
+        #form{
+            background-color: #ead2ac ;
+            border: #ead2ac solid 2px;
+            width: 75%;
+            margin: auto;
+            
+        }
+        #submit { 
+            height: 40px; 
+            width: 100px; 
+            } 
+
+    </style>
+</head>
+<body>
+    <br>
+    <table id = menu align="center" width="80%">
+        <tbody>
+            <tr align="center">
+                <td style="background:#87c0c2">
+                <h2>
+                    <a href="home.html" style="color: black;">home</a>
+                </h2>
+                </td>
+                <td style="background:#87c0c2">
+                    <h2>
+                        <a href="gallery.html" style="color: black;">Gallery</a>
+                    </h2>
+                </td>
+                <td style="background:#87c0c2">
+                    <h2>
+                        <a href="contact.html" style="color: black;">Contact</a>
+                    </h2>
+                </td>
+                <td style="background:#87c0c2">
+                    <h2>
+                        <a href="cal.html" style="color: black;">CalculateGPA</a>
+                    </h2>
+                </td>    
+            </tr>
+        </tbody>
+    </table>
+    <br>><br>
+    <form id = "form">
+        <table id="menu">
+            <tr>
+                <th>Subject</th>
+                 <th><input type="text" placeholder="Subject" id="new-subject"></th>
+            </tr>
+            <tr>
+                <th>Subject ID</th>
+                <th><input type="text" placeholder="Subject ID" id="new-code"></th>
+            </tr>
+            <tr>
+                <th>Grade</th>
+                  <th>
+                    <select name ="gpa" id = "new-grade" itemref="gpa" >
+                        <optgroup label="Grade">
+                            <option value="A" >A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D+">D+</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </optgroup><br>
+                    </select>
+                </th><br>
+            </tr>
+                
+         <tr>
+               
+                
+              
+            
+            </tr>
+        </table>
+        <p id="semAll">
+            <input type="radio" id="sem1" name="semAll" value="sem1">
+            <label for="sem1">Semester1</label>
+            <input type="radio" id="sem2" name="semAll" value="sem2">
+            <label for="sem2">Semester2</label>
+        </p><br>
+        
+    <center><submit"><input type="submit"id="submit" value="Add"></submit></center><br><br>
+    </form><br><br>
+    <h1>Semester 1</h1> <br><br>
+    <table id="table2">
+        <thead>
+            <tr>
+                <td width="20%">
+                    <h2>Subject</h2>
+                </td>
+                <td width="20%">
+                    <h2>Subject ID</h2>
+                </td>
+                <td width="20%">
+                    <h2>Grade</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="tableinfo">
+        
+        </tbody>
+    </table> <br><br><br><br><br>
+
+    <h1>Semester 2</h1> <br><br>
+    <table id="table2">
+        <thead>
+            <tr>
+                <td width="20%">
+                    <h2>Subject</h2>
+                </td>
+                <td width="20%">
+                    <h2>Subject ID</h2>
+                </td>
+                <td width="20%">
+                    <h2>Grade</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="tableinfo2">
+        
+        </tbody>
+    </table> <br><br>
+    <table id="table2">
+        <tbody>
+            <tr>
+                <td width="50%">
+                    <h2> GPA of Majority : </h2>
+                </td>
+                <td id="gradeM">
+
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table id="table2">
+        <tbody>
+            <tr>
+                <td width="60%">
+                    <h2> GPA of Semester 1 : </h2>
+                </td>
+                <td id="gradeSem1">
+
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table id="table2">
+        <tr>
+            <td width="60%" >
+                <h2> GPA of Semester 2 : </h2>
+            </td>
+            <td id="gradeSem2">
+
+            </td>
+        </tr>
+    </table>
+    <script src="GPACal.js"></script>
+</body>
+</html>
